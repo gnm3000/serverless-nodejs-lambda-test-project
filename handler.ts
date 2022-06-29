@@ -9,12 +9,11 @@ export const sayHello = (name: string) => {
 
 
 export const hello: Handler = (event: any) => {
-    let itsCallingFrom = event.queryStringParameters || 'none';
     const response = {
         statusCode: 200,
         body: JSON.stringify(
             {
-                message: sayHello(itsCallingFrom)
+                message: sayHello("User")
             },null,2)
         };
         return new Promise((resolve)=>{
