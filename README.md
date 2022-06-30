@@ -16,3 +16,8 @@ Test
 npm run test
 ```
 
+Test locally serverless offline
+```console
+npm run run:local
+```
+
